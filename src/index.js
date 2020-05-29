@@ -7,8 +7,7 @@ const port = process.env.PORT;
 
 const consoleOutput = () => {
   const timer = setInterval(() => {
-    const date = new Date(new Date().toUTCString());
-    console.log(date);
+    console.log(new Date(new Date().toUTCString()));
   }, interval);
 
   return timer;
